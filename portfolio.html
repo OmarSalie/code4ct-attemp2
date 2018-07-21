@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+    <!-- link fontawesome stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/fa-brands.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-regular.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-solid.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+    <!-- the favicon used in the browser tabs -->
+    <link rel="icon" href="images/favicon.png" type="image/ico">
+
+    <title>Portfolio | CODE4CT</title>
+</head>
+<body>
+    <!-- an id linked to the top of the page for referencing purposes -->
+    <div id="page-top"></div>
+    <!-- ================================================================================================= -->
+    <!-- Header: containing the compay logo, navigtion bar and search box -->
+    <!-- ================================================================================================= -->
+    <header>
+        <div class="company-logo">
+            <a href="index.html" class="company-logo">
+                <img src="images/code4ct-logo.jpg" alt="CODE4CT-logo">
+            </a>
+        </div>
+        
+        <!-- Navigation between pages -->
+        <nav id="nav" class="navbar">
+            <a href="index.html" class="navItems">Home</a>
+            <a href="courses.html" class="navItems">Courses</a>
+            <a href="#page-top" class="navItems">Portfolio</a>
+            <a href="about.html" class="navItems">About</a>
+            <a href="contact.html" class="navItems">Contact</a>
+            <span class="navItems search-bar">
+                <input type="text" name="search" id="search" placeholder="...search...">
+                <button class="search-button">
+                    <i class="fa fa-search"aria-hidden="true"></i>
+                </button>
+            </span>
+
+            <!-- navigation drawer icon for mobile view  -->
+            <a href="javascript:void(0);" class="icon" onclick="drawerToggle()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+    <!-- ================================================================================================= -->
+    <!-- Main: main body of the web page -->
+    <!-- ================================================================================================= -->
+    <main>
+        <!-- contains the page header -->
+        <section id="page-header">
+            <h1>PORTFOLIO</h1>
+            <p><span class="main-pink">HOME</span> → PORTFOLIO</p>
+        </section>
+
+        <!-- Section A: contains image slider and introduction to site -->
+        <section id="section-a">
+            <div class="gallery">
+                <div class="gallery-grid">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" class="galleryImg3" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" class="galleryImg6" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                    <img src="images/portfolio1.jpg" class="galleryImg11" alt="">
+                    <img src="images/portfolio1.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-grid">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" class="galleryImg3" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" class="galleryImg6" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                    <img src="images/portfolio2.jpg" class="galleryImg11" alt="">
+                    <img src="images/portfolio2.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-grid">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" class="galleryImg3" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" class="galleryImg6" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                    <img src="images/portfolio3.jpg" class="galleryImg11" alt="">
+                    <img src="images/portfolio3.jpg" alt="">
+                </div>
+            </div>
+            <div class="slideNav black-bg">
+                <div class="arrow align-center navigation" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="navigation indicators" onclick="currentDiv(1)">1</div>
+                <div class="navigation indicators" onclick="currentDiv(2)">2</div>
+                <div class="navigation indicators" onclick="currentDiv(3)">3</div>
+                <div class="arrow align-center navigation" onclick="plusDivs(1)">&#10095;</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================================================================================= -->
+    <!-- Aside: contains sections with funtionality that may be used of other pages -->
+    <!-- ================================================================================================= -->
+    <aside>
+        <!-- Partner Carousel: a carousel that loops with the names of the company partners -->
+        <section id="partner-carousel" class="black-bg">
+            <div class="slider">
+                <div class="partner-logos">
+                    <img src="images/partner-logo1.jpg" alt="Deloitte Digital" width="200px" height: "80px">
+                    <img src="images/partner-logo2.jpg" alt="DGMT" width="200px" height: "80px">
+                    <img src="images/partner-logo3.jpg" alt="Amazon" width="200px" height: "80px">
+                    <img src="images/partner-logo4.jpg" alt="Automattic" width="200px" height: "80px">
+                    <img src="images/partner-logo5.jpg" alt="Capitec Bank" width="200px" height: "80px">
+                    <img src="images/partner-logo6.jpg" alt="The American Corner" width="200px" height: "80px">
+                    <img src="images/partner-logo7.jpg" alt="Google" width="200px" height: "80px">
+                    <img src="images/partner-logo8.png" alt="CSG" width="200px" height: "80px">
+                    <img src="images/partner-logo9.png" alt="Lwande" width="200px" height: "80px">
+                    <img src="images/partner-logo10.png" alt="Mobenzi" width="200px" height: "80px">
+                    <img src="images/partner-logo11.png" alt="Open Box" width="200px" height: "80px">
+                    <!-- <img src="images/partner-logo12.png" alt="Saratoga" width="200px" height: "80px">
+                    <img src="images/partner-logo13.png" alt="TNS" width="200px" height: "80px">
+                    <img src="images/partner-logo14.png" alt="WeTech" width="200px" height: "80px">
+                    <img src="images/partner-logo15.png" alt="Where Is My Transport" width="200px" height: "80px"> -->
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <a href="#page-top" id="back-to-top" title="Back To Top">&uarr;</a>
+
+    <!-- ================================================================================================= -->
+    <!-- Footer: contains brief information on how to contact the company -->
+    <!-- ================================================================================================= -->
+    <footer>
+        <div class="site-info">
+
+            <div class="info-contact">
+                <p class="info-header">Contact</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 021 685 0991</li>
+                    <li><i class="far fa-envelope"></i> info@code4ct.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+                </ul>
+            </div>
+            <div class="info-company">
+                <p class="info-header">Company</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="info-help">
+                <p class="info-header">Help & Support</p>
+                <ul>
+                    <li><a href="#">Help centre</a></li>
+                    <li><a href="#">Free simple template</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Refund span</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="social-media pink-bg">
+
+            <span class="copyright">copyright © 2017 PRIVACY POLICY</span>
+            <br>
+            <span class="media-links">
+                Follow Us: 
+                <a href="https://www.facebook.com/code4ct/"><i class="fab fa-facebook"></i></a> 
+                <a href="https://twitter.com/@code4ct" target="_blank"><i class="fab fa-twitter"></i></a> 
+                <a href="https://www.instagram.com/code4ct/" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="#" target="_blank"><i class="fa fab-google-plus"></i></a> 
+                <a href="https://www.linkedin.com/company/9414552/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                <a href="#" target="_blank"><i class="fab fa-skype"></i></a></p> 
+            </span>
+
+        </div>
+    </footer>
+
+    <!-- ================================================================================================= -->
+    <!-- JavaScript -->
+    <!-- ================================================================================================= -->
+    <script src="js/main.js"></script>
+
+    <script>
+        'use strict';
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        carousel();
+    </script>
+
+    <script>
+        'use strict';
+
+        let sliderIndex = 1;
+        showDivs(sliderIndex);
+
+        function plusDivs(n) {
+        showDivs(sliderIndex += n);
+        }
+
+        function currentDiv(n) {
+        showDivs(sliderIndex = n);
+        }
+
+        function showDivs(n) {
+            let i;
+            let x = document.getElementsByClassName("gallery");
+            let dots = document.getElementsByClassName("indicators");
+
+            if (n > x.length) {
+                sliderIndex = 1
+            }    
+            if (n < 1) {
+                sliderIndex = x.length
+            }
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" selected", "");
+            }
+
+            x[sliderIndex-1].style.display = "block";  
+            dots[sliderIndex-1].className += " selected";
+        }
+    </script>
+</body>
+</html>

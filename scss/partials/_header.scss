@@ -1,0 +1,134 @@
+header {
+    position: sticky;
+    width: 100%;
+    top: 0; 
+    background-color: white;
+    z-index: 2;
+}
+
+.company-logo {
+    width: 150px;
+    
+    a {
+        width: 100%;
+        height: 100%;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Hide menu items
+.navItems {
+    display: none;
+}
+
+// fix drawer icon to the right of the navbar
+.navbar{
+    background-color: white;
+    .icon {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        display: block;
+        font-size: 30px;
+        color: $pink;
+    }
+}
+
+// select the trigger class that will show menu onclick of icon, make sure the position is relative
+.navbar.showMenu {
+    .navItems {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-top: 23px;
+        width: 100vw;
+        height: 4vh;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: $pink;
+            color: white;
+        }
+
+        &:first-child {
+            border-top: 1px $pink solid;    // adds a top border when the drawer is opened
+        }
+    }
+
+    #search {
+        border: none;
+        border-bottom: 2px $pink solid;
+        border-radius: 5px;
+    }
+
+    .search-button {
+        text-decoration: none;
+        border: none;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        
+        &:hover {
+            color: $pink;
+        }
+    }
+} 
+
+@media (min-width: 1024px) {
+    header {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    .navItems {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        // 
+        &:hover {
+            color: $pink;
+        }
+    }
+    .navbar{
+        vertical-align: top;
+        display: inline-block;
+        .icon {
+            display: none;
+        }
+    }
+    .search-bar {
+        float: right;
+
+        #search {
+            padding-right: 0;
+            border: none;
+            border-bottom: 2px $pink solid;
+            border-radius: 5px;
+        }
+        .search-button {
+            padding-left: 0;
+            text-decoration: none;
+            border: none;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            width: 0;
+            
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .navItems {
+        padding-right: 50px;
+    }
+}

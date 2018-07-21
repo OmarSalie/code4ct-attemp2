@@ -1,0 +1,23 @@
+@import 'partials/colors',
+'partials/variables',
+'partials/mixins';
+// Core Page Styling
+@import 'partials/base',
+'partials/back-to-top';
+// Header Styling (includes navigation)
+@import 'partials/header';
+// Home Page Specific Styling
+@import 'partials/image-slider',
+'partials/offers',
+'partials/profiles';
+// Courses Page Specific Styling
+@import 'partials/cart';
+@import 'partials/count-up',
+'partials/subscription-form',
+'partials/carousel';
+// Contact Page Specific Styling
+@import 'partials/contact';
+// Footer Styling
+@import 'partials/footer';
+// Extra responsiveness
+@import 'partials/responsive';

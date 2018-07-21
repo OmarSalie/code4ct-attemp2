@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+    <!-- link fontawesome stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/fa-brands.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-regular.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-solid.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+    <!-- the favicon used in the browser tabs -->
+    <link rel="icon" href="images/favicon.png" type="image/ico">
+
+    <title>CODE4CT | Young women leveraging tech for social innovation</title>
+</head>
+
+<body>
+    <!-- an id linked to the top of the page for referencing purposes -->
+    <div id="page-top"></div>
+    <!-- ================================================================================================= -->
+    <!-- Header: containing the company logo, navigation bar and search box -->
+    <!-- ================================================================================================= -->
+    <header>
+        <div class="company-logo">
+            <a href="#page-top" class="company-logo">
+                <img src="images/code4ct-logo.jpg" alt="CODE4CT-logo">
+            </a>
+        </div>
+
+        <!-- Navigation between pages -->
+        <nav id="nav" class="navbar">
+            <a href="#page-top" class="navItems">Home</a>
+            <a href="courses.html" class="navItems">Courses</a>
+            <a href="portfolio.html" class="navItems">Portfolio</a>
+            <a href="about.html" class="navItems">About</a>
+            <a href="contact.html" class="navItems">Contact</a>
+            <span class="navItems search-bar">
+                <input type="text" name="search" id="search" placeholder="...search...">
+                <button class="search-button">
+                    <i class="fa fa-search"aria-hidden="true"></i>
+                </button>
+            </span>
+
+            <!-- navigation drawer icon for mobile view  -->
+            <a href="javascript:void(0);" class="icon" onclick="drawerToggle()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+    <!-- ================================================================================================= -->
+    <!-- Main: main body of the web page -->
+    <!-- ================================================================================================= -->
+    <main>
+        <!-- Section A: contains image slider and introduction to site -->
+        <section id="image-slider">
+            <div class="slider-text">
+                <h2>Code for Cape Town</h2>
+                <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology
+                    that is relevant to a South African context.</p>
+                <button class="expand-right read-btn"><a href="about.html">Read More</a></button>
+                <button class="expand-right code-btn"><a href="#">Start Coding</a></button>
+            </div>
+
+            <div class="slider-images">
+                <div class="mySlides slide1"></div>
+                <div class="mySlides slide2"></div>
+                <div class="mySlides slide3"></div>
+                <div class="slideNav black-bg">
+                    <div class="arrow align-center navigation" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="navigation indicators" onclick="currentDiv(1)"></div>
+                    <div class="navigation indicators" onclick="currentDiv(2)"></div>
+                    <div class="navigation indicators" onclick="currentDiv(3)"></div>
+                    <div class="arrow align-center navigation" onclick="plusDivs(1)">&#10095;</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section B: contains brief information about what the company does -->
+        <section id="section-b" class="who-are-we">
+            <div class="info-text">
+                <h3 class="transparent-border"><span class="red-border-bottom">Who</span> Are We</h3>
+                <p>Code for Cape Town strives to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry.</p>
+                <p>Code4CT is broadening perspectives about career opportunities for many girls and is showing them that the ICT sector offers exciting career paths with the opportunity for social impact. Through using coding and web building skills, participants
+                    are exposed to how IT skills can be applied to solve problems, and they are encouraged to use their knowledge to tackle a real local challenge. Code for Cape Town equips high potential female learners with the coding and problem solving
+                    skills. </p>
+                <button class="expand-right who-read-btn"><a href="#">Read More</a></button>
+            </div>
+
+            <div class="info-images">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+            </div>
+        </section>
+
+        <!-- Section C: contains information on what is offered by the company -->
+        <section id="section-c" class="offers black-bg">
+            <div class="off-coding off">
+                <img src="images/off-coding.png" alt="Coding" class="off-image">
+                <div class="off-text">
+                    <h4>Coding</h4>
+                    <p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p>
+                </div>
+            </div>
+
+            <div class="off-communication off">
+                <img src="images/off-communication.png" alt="Communication" class="off-image">
+                <div class="off-text">
+                    <h4>Communication</h4>
+                    <p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p>
+                </div>
+            </div>
+
+            <div class="off-problem-solving off">
+                <img src="images/off-problem-solving.png" alt="Problem Solving" class="off-image">
+                <div class="off-text">
+                    <h4>Problem Solving</h4>
+                    <p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</p>
+                </div>
+            </div>
+
+            <div class="off-career-guidance off">
+                <img src="images/off-career-guidance.png" alt="Career Guidance" class="off-image">
+                <div class="off-text">
+                    <h4>Career Guidance</h4>
+                    <p>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section D: contains a small portfolio of images of what is done at the company -->
+        <section id="section-d" class="portfolio">
+            <div class="portfolio-text">
+                <h3 class="transparent-border"><span class="red-border-bottom">Our</span> Awesome Portfolio</h3>
+
+                <p>Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation.</p>
+                <p>Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.</p>
+            </div>
+
+            <div class="portfolio-images">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+            </div>
+
+            <div class="portfolio-imageLrg">
+                <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+            </div>
+        </section>
+
+        <!-- contains the information of the core members of staff with images -->
+        <section id="profile">
+            <h3 class="transparent-border"><span class="red-border-bottom">Meet</span> Our Team</h3>
+
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="profile 1">
+                <div class="pro-text">
+                    <p class="pro-name">Andrea Petersen</p>
+                    <p class="pro-title">Operations Lead</p>
+                    <p class="pro-desc">Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/profile-2.jpg" alt="profile 2">
+                <div class="pro-text">
+                    <p class="pro-name">Emma Dicks</p>
+                    <p class="pro-title">Operations Lead</p>
+                    <p class="pro-desc">Emma has been recognised on numerous prestigious listing including Fast Company’s 0 Under 30.</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/profile-3.jpg" alt="profile 3">
+                <div class="pro-text">
+                    <p class="pro-name">Tegan Crous</p>
+                    <p class="pro-title">Program Lead</p>
+                    <p class="pro-desc">Tegan heads up the high school program, seeing them pursue their potential in a safe environment.</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/profile-4.jpg" alt="profile 4">
+                <div class="pro-text">
+                    <p class="pro-name">Tracy-Anne Sikenjana</p>
+                    <p class="pro-title">Leadership Program Manager</p>
+                    <p class="pro-desc">During her time at Code4CT headed up the Ambassador programme and assisted with all program operations.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================================================================================= -->
+    <!-- Aside: contains sections with funtionality that may be used of other pages -->
+    <!-- ================================================================================================= -->
+    <aside>
+        <!-- CountUp: contains a count up of various statistics -->
+        <section id="countup" class="black-bg">
+            <div class="counter">
+                <span id="count-girls" class="count-number">0</span>
+                <span class="count-number">+</span>
+                <div class="count-desc">
+                    <p>Number of Girls</p>
+                </div>
+            </div>
+            <div class="counter">
+                <span id="count-hours" class="count-number">0</span>
+                <span class="count-number">+</span>
+                <div class="count-desc">
+                    <p>Hours of Coding</p>
+                </div>
+            </div>
+            <div class="counter">
+                <span id="count-coffee" class="count-number">0</span>
+                <span class="count-number">+</span>
+                <div class="count-desc">
+                    <p>Cups of Coffee</p>
+                </div>
+            </div>
+            <div class="counter">
+                <span id="count-projects" class="count-number">0</span>
+                <span class="count-number">+</span>
+                <div class="count-desc">
+                    <p>Number of Projects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Form: a form to sign up to recieve new company information -->
+        <section id="subscription-form">
+            <h3><span class="sub_form-icon"><i class="fas fa-paper-plane"></i></span>Subscribe To Us</h3>
+
+            <p>Sign up for our newsletter:</p>
+
+            <form action="">
+                <input type="email" name="email" id="sub_form-email" placeholder="enter your email">
+                <button type="submit" class="sub_form-btn">Submit</button>
+            </form>
+
+            <br>
+        </section>
+
+        <!-- Partner Carousel: a carousel that loops with the names of the company partners -->
+        <section id="partner-carousel" class="black-bg">
+            <div class="slider">
+                <div class="partner-logos">
+                    <img src="images/partner-logo1.jpg" alt="Deloitte Digital" width="200px" height: "80px">
+                    <img src="images/partner-logo2.jpg" alt="DGMT" width="200px" height: "80px">
+                    <img src="images/partner-logo3.jpg" alt="Amazon" width="200px" height: "80px">
+                    <img src="images/partner-logo4.jpg" alt="Automattic" width="200px" height: "80px">
+                    <img src="images/partner-logo5.jpg" alt="Capitec Bank" width="200px" height: "80px">
+                    <img src="images/partner-logo6.jpg" alt="The American Corner" width="200px" height: "80px">
+                    <img src="images/partner-logo7.jpg" alt="Google" width="200px" height: "80px">
+                    <img src="images/partner-logo8.png" alt="CSG" width="200px" height: "80px">
+                    <img src="images/partner-logo9.png" alt="Lwande" width="200px" height: "80px">
+                    <img src="images/partner-logo10.png" alt="Mobenzi" width="200px" height: "80px">
+                    <img src="images/partner-logo11.png" alt="Open Box" width="200px" height: "80px">
+                    <!-- <img src="images/partner-logo12.png" alt="Saratoga" width="200px" height: "80px">
+                    <img src="images/partner-logo13.png" alt="TNS" width="200px" height: "80px">
+                    <img src="images/partner-logo14.png" alt="WeTech" width="200px" height: "80px">
+                    <img src="images/partner-logo15.png" alt="Where Is My Transport" width="200px" height: "80px"> -->
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <a href="#page-top" id="back-to-top" title="Back To Top">&uarr;</a>
+
+    <!-- ================================================================================================= -->
+    <!-- Footer: contains brief information on how to contact the company -->
+    <!-- ================================================================================================= -->
+    <footer>
+        <div class="site-info">
+
+            <div class="info-contact">
+                <p class="info-header">Contact</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 021 685 0991</li>
+                    <li><i class="far fa-envelope"></i> info@code4ct.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+                </ul>
+            </div>
+            <div class="info-company">
+                <p class="info-header">Company</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="info-help">
+                <p class="info-header">Help & Support</p>
+                <ul>
+                    <li><a href="#">Help centre</a></li>
+                    <li><a href="#">Free simple template</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Refund span</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="social-media pink-bg">
+
+            <span class="copyright">copyright © 2017 PRIVACY POLICY</span>
+            <br>
+            <span class="media-links pink-bg">
+                Follow Us: 
+                <a href="https://www.facebook.com/code4ct/"><i class="fab fa-facebook"></i></a> 
+                <a href="https://twitter.com/@code4ct" target="_blank"><i class="fab fa-twitter"></i></a> 
+                <a href="https://www.instagram.com/code4ct/" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="#" target="_blank"><i class="fa fab-google-plus"></i></a> 
+                <a href="https://www.linkedin.com/company/9414552/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                <a href="#" target="_blank"><i class="fab fa-skype"></i></a></p> 
+            </span>
+
+        </div>
+    </footer>
+
+    <!-- ================================================================================================= -->
+    <!-- JavaScript -->
+    <!-- ================================================================================================= -->
+    <script src="js/main.js"></script>
+
+    <script>
+        'use strict';
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        let sliderIndex = 1;
+        showDivs(sliderIndex);
+
+        function plusDivs(n) {
+            showDivs(sliderIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(sliderIndex = n);
+        }
+
+        function showDivs(n) {
+            let i;
+            let x = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("indicators");
+
+            if (n > x.length) {
+                sliderIndex = 1
+            }
+
+            if (n < 1) {
+                sliderIndex = x.length
+            }
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" selected", "");
+            }
+
+            console.log(sliderIndex);
+            x[sliderIndex - 1].style.display = "block";
+            dots[sliderIndex - 1].className += " selected";
+        }
+
+        // running the funtion for the count ups
+        countUp("count-girls", 0, 780, 2000);
+        countUp("count-hours", 0, 8765, 2000);
+        countUp("count-coffee", 0, 3000, 2000);
+        countUp("count-projects", 0, 3120, 2000);
+
+        carousel();
+    </script>
+</body>
+
+</html>

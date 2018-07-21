@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+    <!-- link fontawesome stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/fa-brands.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-regular.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-solid.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+    <!-- the favicon used in the browser tabs -->
+    <link rel="icon" href="images/favicon.png" type="image/ico">
+
+    <title>Courses | CODE4CT</title>
+</head>
+
+<body>
+    <!-- an id linked to the top of the page for referencing purposes -->
+    <div id="page-top"></div>
+    <!-- ================================================================================================= -->
+    <!-- Header: containing the compay logo, navigtion bar and search box -->
+    <!-- ================================================================================================= -->
+    <header>
+        <div class="company-logo">
+            <a href="index.html" class="company-logo">
+                <img src="images/code4ct-logo.jpg" alt="CODE4CT-logo">
+            </a>
+        </div>
+
+        <!-- Navigation between pages -->
+        <nav id="nav" class="navbar">
+            <a href="index.html" class="navItems">Home</a>
+            <a href="#page-top" class="navItems">Courses</a>
+            <a href="portfolio.html" class="navItems">Portfolio</a>
+            <a href="about.html" class="navItems">About</a>
+            <a href="contact.html" class="navItems">Contact</a>
+            <span class="navItems search-bar">
+                <input type="text" name="search" id="search" placeholder="...search...">
+                <button class="search-button">
+                    <i class="fa fa-search"aria-hidden="true"></i>
+                </button>
+            </span>
+
+            <!-- navigation drawer icon for mobile view  -->
+            <a href="javascript:void(0);" class="icon" onclick="drawerToggle()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+    <!-- ================================================================================================= -->
+    <!-- Main: main body of the web page -->
+    <!-- ================================================================================================= -->
+    <main>
+        <!-- contains the page header -->
+        <section id="page-header">
+            <h1>COURSES</h1>
+            <p><span class="main-pink">HOME</span> → COURSES</p>
+        </section>
+
+        <!-- Section A: contains the items to be purchased -->
+        <section id="courses-section-a">
+            <div id="shopping-items">
+                <div class="intro-code1 shop-item">
+                    <h2>Intro to Coding: Web Pages</h2>
+                    <p>Code a simple one-page website using HTML and JQuery.</p>
+                    <p> <b>Duration: </b>3 hours <br>
+                        <b>Price: </b>R250</p>
+                    <center><input onclick="displayCart()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Coding: Web Pages" data-price="5600"></center>
+                </div>
+                <div class="intro-code2 shop-item">
+                    <h2>Create with Code: Web Pages</h2>
+                    <p>Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</p>
+                    <p> <b>Duration: </b>3 hours <br>
+                        <b>Price: </b>R960</p>
+                    <center><input onclick="displayCart()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name=" Create with Code: Web Pages" data-price="960"></center>
+                </div>
+                <div class="intro-code3 shop-item">
+                    <h2>Getting started as a developer</h2>
+                    <p>Learn how to set up a development environment and practical skills to start coding.</p>
+                    <p> <b>Duration: </b>3 hours <br>
+                        <b>Price: </b>R250</p>
+                    <center><input onclick="displayCart()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Getting started as a developer" data-price="250"></center>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section B: contains the shooping cart as a list of items -->
+        <section id="courses-section-b">
+            <div class="cart-container">
+                <center><i class="cart-icon fas fa-shopping-cart"></i></center>
+                <h2 class="cart-heading">Cart:</h2>
+                <hr>
+                <div id="cart-items">
+
+                </div>
+                <hr>
+                <button id="clear-cart">Clear</button><span>Number of Items: </span><span id="count-items"></span>
+            </div>
+        </section>
+
+        <!-- Section C: contains the total cost of the cart items -->
+        <section id="courses-section-c">
+            <span class="cart-total-label">Total: R</span><span id="cart-total"></span>
+        </section>
+    </main>
+
+    <!-- ================================================================================================= -->
+    <!-- Aside: contains sections with funtionality that may be used of other pages -->
+    <!-- ================================================================================================= -->
+    <aside>
+        <!-- Subscription Form: a form to sign up to recieve new company information -->
+        <section id="subscription-form">
+            <h3><span class="sub_form-icon"><i class="fas fa-paper-plane"></i></span>Subscribe To Us</h3>
+
+            <p>Sign up for our newsletter:</p>
+
+            <form action="">
+                <input type="email" name="email" id="sub_form-email" placeholder="enter your email">
+                <button type="submit" class="sub_form-btn">Sign Up</button>
+            </form>
+
+            <br>
+        </section>
+    </aside>
+
+    <a href="#page-top" id="back-to-top" title="Back To Top">&uarr;</a>
+
+    <!-- ================================================================================================= -->
+    <!-- Footer: contains brief information on how to contact the company -->
+    <!-- ================================================================================================= -->
+    <footer>
+        <div class="site-info">
+
+            <div class="info-contact">
+                <p class="info-header">Contact</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 021 685 0991</li>
+                    <li><i class="far fa-envelope"></i> info@code4ct.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+                </ul>
+            </div>
+            <div class="info-company">
+                <p class="info-header">Company</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="info-help">
+                <p class="info-header">Help & Support</p>
+                <ul>
+                    <li><a href="#">Help centre</a></li>
+                    <li><a href="#">Free simple template</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Refund span</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="social-media pink-bg">
+
+            <span class="copyright">copyright © 2017 PRIVACY POLICY</span>
+            <br>
+            <span class="media-links">
+                Follow Us: 
+                <a href="https://www.facebook.com/code4ct/"><i class="fab fa-facebook"></i></a> 
+                <a href="https://twitter.com/@code4ct" target="_blank"><i class="fab fa-twitter"></i></a> 
+                <a href="https://www.instagram.com/code4ct/" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="#" target="_blank"><i class="fa fab-google-plus"></i></a> 
+                <a href="https://www.linkedin.com/company/9414552/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                <a href="#" target="_blank"><i class="fab fa-skype"></i></a></p> 
+            </span>
+
+        </div>
+    </footer>
+
+    <!-- ================================================================================================= -->
+    <!-- JavaScript -->
+    <!-- ================================================================================================= -->
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+
+    <script>
+        'use strict';
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        let cart = document.getElementById("courses-section-a");
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(".add-to-cart").click(function(event) {
+            event.preventDefault();
+            var name = $(this).attr("data-name");
+            var price = Number($(this).attr("data-price"));
+
+            shoppingCart.addItemToCart(name, price, 1);
+            displayCart();
+        });
+
+        $("#clear-cart").click(function(event) {
+            shoppingCart.clearCart();
+            displayCart();
+        });
+
+        function displayCart() {
+            var cartArray = shoppingCart.listCart();
+            var display = "";
+
+            for (var i in cartArray) {
+                display += "<div class='shop-item'><div><h3 class='cart-item-name'>" +
+                    cartArray[i].name +
+                    "</h3><input class='item-count' type='number' data-name='" +
+                    cartArray[i].name +
+                    "' value='" + cartArray[i].count + "' >" +
+                    " x " + cartArray[i].price +
+                    " = R" + cartArray[i].total +
+                    "</div><div> <button class='cart-button plus-item' data-name='" +
+                    cartArray[i].name + "'>+</button>" +
+                    " <button class='cart-button subtract-item' data-name='" +
+                    cartArray[i].name + "'>-</button>" +
+                    " <button class='cart-button delete-item' data-name='" +
+                    cartArray[i].name + "'>X</button>" +
+                    "</div></div>";
+            }
+
+            $("#cart-items").html(display);
+            $("#count-items").html(shoppingCart.countCart());
+            $("#cart-total").html(shoppingCart.totalCart());
+        }
+
+        $("#cart-items").on("click", ".delete-item", function(event) {
+            var name = $(this).attr("data-name");
+            shoppingCart.removeItemFromCartAll(name);
+            displayCart();
+        });
+
+        $("#cart-items").on("click", ".subtract-item", function(event) {
+            var name = $(this).attr("data-name");
+            shoppingCart.removeItemFromCart(name);
+            displayCart();
+        });
+
+        $("#cart-items").on("click", ".plus-item", function(event) {
+            var name = $(this).attr("data-name");
+            shoppingCart.addItemToCart(name, 0, 1);
+            displayCart();
+        });
+
+        $("#cart-items").on("change", ".item-count", function(event) {
+            var name = $(this).attr("data-name");
+            var count = Number($(this).val());
+            shoppingCart.setCountForItem(name, count);
+            displayCart();
+        });
+
+
+        displayCart();
+    </script>
+</body>
+
+</html>

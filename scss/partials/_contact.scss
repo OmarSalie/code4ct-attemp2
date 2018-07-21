@@ -1,0 +1,59 @@
+#contactform {
+    form {
+        input {
+            display: block;
+            width: 200px;
+            height: 20px;
+            border-radius: 3px;
+            border: 1px solid $black;
+            margin: 5px auto;
+        }
+
+        textarea {
+            display: block;
+            width: 200px;
+            border-radius: 3px;
+            border: 1px solid $black;
+            margin: 5px auto;
+
+            resize: none;
+        }
+
+        button {
+            display: block;
+            border: 1px solid $pink;
+            background-color: $pink;
+            color: $white;
+
+            margin: 0 auto;
+        }
+    }
+}
+
+// contact page
+@media (min-width: 768px) {
+    #contact-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    #contactform {
+        form {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 10px;
+
+            textarea {
+                grid-column: 1/4;
+                grid-row: 2/4;
+
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+// index page
+@media (min-width: 768px) {
+    .who-are-we {
+        .info-images {
+            @include imageFour
+        }
+    }
+
+    .portfolio {
+        .portfolio-images {
+            @include imageFour
+        }
+        .portfolio-imageLrg {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .who-are-we {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .portfolio {
+        @include gridFour;
+        grid-template-rows: 150px 1fr;
+
+        .portfolio-text {
+            grid-column: 1/3;
+        }
+    }
+} 
+
+
+// portfolio page
+@media (min-width: 768px) {
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 22% 22% 1fr 22% 22%;
+        grid-template-rows: 200px;
+
+        .galleryImg3 {
+            grid-column: 3/5;
+        }
+
+        .galleryImg6 {
+            grid-column: 2/4;
+        }
+
+        .galleryImg11 {
+            grid-column: 3/5;
+        }
+    }
+}
+
+// about page 
+@media (min-width: 1024px) {
+    .welcome {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .who-we-are {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 300px;
+        grid-gap: 20px;
+
+        .who-image {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        .who-text {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .who-about {
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+            @include gridFour;
+        }
+
+    }
+}
+

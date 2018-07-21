@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to the main stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+    <!-- link fontawesome stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/fa-brands.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-regular.css">
+    <link rel="stylesheet" type="text/css" href="css/fa-solid.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+    <!-- the favicon used in the browser tabs -->
+    <link rel="icon" href="images/favicon.png" type="image/ico">
+
+    <title>Contact Us | CODE4CT</title>
+</head>
+<body>
+    <!-- an id linked to the top of the page for referencing purposes -->
+    <div id="page-top"></div>
+    <!-- ================================================================================================= -->
+    <!-- Header: containing the compay logo, navigtion bar and search box -->
+    <!-- ================================================================================================= -->
+    <header>
+        <div class="company-logo">
+            <a href="index.html" class="company-logo">
+                <img src="images/code4ct-logo.jpg" alt="CODE4CT-logo">
+            </a>
+        </div>
+        
+        <!-- Navigation between pages -->
+        <nav id="nav" class="navbar">
+            <a href="index.html" class="navItems">Home</a>
+            <a href="courses.html" class="navItems">Courses</a>
+            <a href="portfolio.html" class="navItems">Portfolio</a>
+            <a href="about.html" class="navItems">About</a>
+            <a href="#page-top" class="navItems">Contact</a>
+            <span class="navItems search-bar">
+                <input type="text" name="search" id="search" placeholder="...search...">
+                <button class="search-button">
+                    <i class="fa fa-search"aria-hidden="true"></i>
+                </button>
+            </span>
+
+            <!-- navigation drawer icon for mobile view  -->
+            <a href="javascript:void(0);" class="icon" onclick="drawerToggle()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+    <!-- ================================================================================================= -->
+    <!-- Main: main body of the web page -->
+    <!-- ================================================================================================= -->
+    <main>
+        <section id="page-header">
+            <h1>CONTACT</h1>
+            <p><span class="main-pink">HOME</span> → CONTACT</p>
+        </section>
+
+        <!-- Section A: contains a form to contact company -->
+        <section id="section-a">
+            <div id="contact-details">
+                <div id="contactform">
+        
+                    <h3 class="transparent-border"><span class="red-border-bottom">Send</span> Us a Message</h3>
+                    <form>
+                        <input type="text" id ="contact-form-name" placeholder="Your Name">
+                        <input type="text" id ="contact-form-email" placeholder="Your E-mail">
+                        <input style="padding-right:1px" type="text" id = "yournumber" placeholder="Phone number">
+                        <textarea name="message" rows="9" cols="32" placeholder="Your message"></textarea>
+            
+                        <button type="button" name="button">Send Email</button>
+                    </form>
+                
+                </div>
+        
+                <div id="contactinfo">
+                    <h3 class="transparent-border"><span class="red-border-bottom">Contact</span> Info</h3>
+        
+                    <p> 021 685 0991 </p>
+                    <p> info@code4ct.com</p>
+                    <p> Mon-Fri 09:00 to 12:00</p>
+                    <p> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+        
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Section B: contains google map embedded showing the location of the company -->
+        <section id="section-b">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638062445999!2d18.44652591521169!3d-33.92471368064084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace!5e0!3m2!1sen!2sza!4v1511462091578" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <a href="#page-top" id="back-to-top" title="Back To Top">&uarr;</a>
+
+    <!-- ================================================================================================= -->
+    <!-- Footer: contains brief information on how to contact the company -->
+    <!-- ================================================================================================= -->
+    <footer>
+        <div class="site-info">
+
+            <div class="info-contact">
+                <p class="info-header">Contact</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 021 685 0991</li>
+                    <li><i class="far fa-envelope"></i> info@code4ct.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</li>
+                </ul>
+            </div>
+            <div class="info-company">
+                <p class="info-header">Company</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="info-help">
+                <p class="info-header">Help & Support</p>
+                <ul>
+                    <li><a href="#">Help centre</a></li>
+                    <li><a href="#">Free simple template</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Refund span</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="social-media pink-bg">
+
+            <span class="copyright">copyright © 2017 PRIVACY POLICY</span>
+            <br>
+            <span class="media-links">
+                Follow Us: 
+                <a href="https://www.facebook.com/code4ct/"><i class="fab fa-facebook"></i></a> 
+                <a href="https://twitter.com/@code4ct" target="_blank"><i class="fab fa-twitter"></i></a> 
+                <a href="https://www.instagram.com/code4ct/" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="#" target="_blank"><i class="fa fab-google-plus"></i></a> 
+                <a href="https://www.linkedin.com/company/9414552/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                <a href="#" target="_blank"><i class="fab fa-skype"></i></a></p> 
+            </span>
+
+        </div>
+    </footer>
+
+    <!-- ================================================================================================= -->
+    <!-- JavaScript -->
+    <!-- ================================================================================================= -->
+    <script src="js/main.js"></script>
+
+    <script>
+        'use strict';
+        window.onscroll = function() {
+            scrollFunction()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.social-media {
+    position: static;
+    bottom: 0;
+    background-color: $pink;
+    height: 60px;
+}
+
+.media-links {
+    float: right;
+}
+
+.site-info {
+    padding: 10px;
+}
+
+.info-contact {
+    ul {
+        list-style-type: none;
+        li {
+            padding: 3px;
+        }
+    }
+}
+
+.info-company {
+    @include removeDecor;
+}
+
+.info-help {
+    @include removeDecor;
+}
+
+@media (min-width: 1024px) {
+    .site-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

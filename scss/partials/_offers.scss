@@ -1,0 +1,23 @@
+.off-image {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .offers {
+        @include gridFour;
+    }
+    .off-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .offers {
+        @include gridLinear;
+    }
+    .off-text {
+        text-align: center;
+    }
+}

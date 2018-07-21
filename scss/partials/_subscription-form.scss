@@ -1,0 +1,30 @@
+.sub_form-icon {
+    color: $pink;
+}
+
+#subscription-form {
+    padding: 20px;
+    text-align: center;
+    form {
+        #sub_form-email {
+            display: inline-block;
+            border: none;
+            border-radius: 3px;
+            height: 40px;
+            background-color: rgb(249, 249, 249);
+        }
+        .sub_form-btn {
+            display: inline-block;
+            border: 1px $pink solid;
+            border-radius: 3px;
+            background-color: $pink;
+            color: $white;
+            text-align: left;
+            width: 100px;
+            height: 40px;
+            &:hover {
+                width: 110px;
+            }
+        }
+    }
+}
